@@ -1,0 +1,9 @@
+﻿@model ApplicationUser
+
+<div>@Model.Email</div>
+<ul>
+    @foreach(Vehicle v in @Model.Vehicles)
+    {
+        <li>@v.Make @v.Model @v.Year</li>
+    }
+</ul>
